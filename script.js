@@ -25,7 +25,7 @@ rollDiceBtn.addEventListener("click", playGame)
 function playGame() {
   let diceNum = Math.floor(Math.random() * 6) + 1;
   diceEl.classList.remove("hidden");
-  diceEl.src = `/images/dice-${diceNum}.png`;
+  diceEl.src = `images/dice-${diceNum}.png`;
   
   if (diceNum !== 1) {
     currentScore += diceNum;
